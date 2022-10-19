@@ -1,0 +1,10 @@
+MCU			= atmega32u4
+BOOTLOADER		= caterina
+
+SPLIT_KEYBOARD		= yes
+MOUSEKEY_ENABLE		= yes
+EXTRAKEY_ENABLE		= yes
+NKRO_ENABLE		= yes
+COMBO_ENABLE		= yes
+UNICODEMAP_ENABLE	= yes
+
