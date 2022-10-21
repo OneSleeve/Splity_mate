@@ -9,32 +9,6 @@ enum layer_names {
 	_FROW
 };
 
-enum combos {
-	AE,
-	UE,
-	OE
-};
-
-enum unicode_name {
-	UC_AE,
-	UC_UE,
-	UC_OE,
-	UC_AEP,
-	UC_UEP,
-	UC_OEP
-
-};
-
-const uint32_t PROGMEM unicode_map[] = {
-	[UC_AE] = 0x00E4,
-	[UC_UE] = 0x00FC,
-	[UC_OE] = 0x00F6,
-	[UC_AEP] = 0x00C4,
-	[UC_UEP] = 0x00DC,
-	[UC_OEP] = 0x00D6
-	
-};
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_DVORAK] = LAYOUT(
 	DV_QUOT,	DV_COMM, 	DV_DOT, 	DV_P, 		DV_Y, 		DV_F, 		DV_G, 		DV_C, 		DV_R, 		DV_L,
@@ -58,7 +32,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 
     [_CODING] = LAYOUT(
-	KC_TRNS, 	KC_TRNS, 	DV_GRV,		DV_AT, 		KC_TRNS, 	KC_TRNS, 	KC_TRNS, 	LALT(KC_UP), 	LALT(KC_DOWN), 	KC_TRNS,
+	KC_TRNS, 	LALT(KC_LEFT), 	LALT(KC_RGHT),	DV_GRV, 	DV_AT,	 	KC_TRNS, 	KC_TRNS, 	LALT(KC_UP), 	LALT(KC_DOWN), 	KC_TRNS,
 	DV_QUES, 	DV_HASH, 	DV_LPRN, 	DV_RPRN, 	KC_TRNS, 	KC_TRNS, 	DV_UNDS, 	DV_EQL, 	DV_BSLS,	KC_F5,
 	KC_LSFT,	DV_DLR, 	DV_LBRC, 	DV_RBRC, 	KC_TRNS, 	KC_TRNS, 	KC_TAB, 	KC_LALT, 	DV_AMPR, 	KC_TRNS,
 			KC_TRNS, 	KC_TRNS, 	KC_TRNS, 	KC_TRNS, 	LALT(KC_F4),	KC_LGUI, 	KC_DEL, 	KC_ESC
@@ -73,14 +47,3 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 )
 
 };
-
-const uint16_t PROGMEM ae_combo[] = {DV_A, DV_E, COMBO_END};
-const uint16_t PROGMEM ue_combo[] = {DV_U, DV_E, COMBO_END};
-const uint16_t PROGMEM oe_combo[] = {DV_O, DV_E, COMBO_END};
-
-combo_t key_combos[COMBO_COUNT] = {
-    [AE] = COMBO(ae_combo, XP(0,3)),
-    [UE] = COMBO(ue_combo, XP(1,4)),
-    [OE] = COMBO(oe_combo, XP(2,5))
-};
-
