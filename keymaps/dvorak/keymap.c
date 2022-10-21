@@ -10,9 +10,9 @@ enum layer_names {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_DVORAK] = LAYOUT(
 	DV_QUOT,	DV_COMM, 	DV_DOT, 	DV_P, 		DV_Y, 		DV_F, 		DV_G, 		DV_C, 		DV_R, 		DV_L,
-	DV_A,		LCTL_T(DV_O),	LSFT_L(DV_E), 	DV_U, 		DV_I, 		DV_D, 		LSFT_T(DV_H), 	LCTL_T(DV_T), 	DV_N, 		DV_S,
+	DV_A,		LCTL_T(DV_O),	LSFT_T(DV_E), 	DV_U, 		DV_I, 		DV_D, 		DV_H, 		LSFT_T(DV_T), 	LCTL_T(DV_N), 		DV_S,
 	DV_SCLN, 	DV_Q, 		DV_J, 		DV_K, 		DV_X, 		DV_B, 		DV_M, 		DV_W, 		DV_V, 		DV_Z,
-			MO(_CODE), 	KC_BSPC, 	MO(_NUMPAD),	KC_ENT,     	KC_TAB,		KC_LGUI,	KC_SPC,		TO(_GAMING)
+			MO(_CODING), 	KC_BSPC, 	MO(_NUMPAD),	KC_ENT,     	KC_TAB,		KC_LGUI,	KC_SPC,		KC_ESC
 ),
 
 
@@ -24,8 +24,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 
     [_CODING] = LAYOUT(
-	KC_TRNS, 	LSFT(DV_BSLS), 	KC_F5,		DV_GRAVE, 	DV_AT,	 	KC_TRNS, 	KC_F1, 	   	KC_F2, 		KC_F3, 		KC_F4, 
-	DV_QUES, 	DV_HASH, 	DV_LPRN, 	DV_RPRN, 	KC_UNDS, 	KC_TRNS, 	KC_F5,  	KC_F6, 		KC_F7, 		KC_F8, 
+	KC_TRNS, 	DV_BSLS, 	KC_F5,		KC_GRAVE, 	DV_AT,	 	KC_TRNS, 	KC_F1, 	   	KC_F2, 		KC_F3, 		KC_F4, 
+	DV_QUES, 	DV_HASH, 	DV_LPRN, 	DV_RPRN, 	DV_UNDS, 	KC_TRNS, 	KC_F5,  	KC_F6, 		KC_F7, 		KC_F8, 
 	KC_LSFT,	DV_DLR, 	DV_LBRC, 	DV_RBRC, 	KC_PEQL, 	KC_TRNS, 	KC_F9, 	   	KC_F10, 	KC_F11, 	KC_F12,
 			KC_TRNS, 	KC_TRNS, 	KC_TRNS, 	KC_TRNS, 	KC_TRNS,	KC_TRNS, 	KC_TRNS, 	KC_TRNS
 )
