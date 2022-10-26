@@ -12,7 +12,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	DV_QUOT,	DV_COMM, 	DV_DOT, 	DV_P, 		DV_Y, 		DV_F, 		DV_G, 		DV_C, 		DV_R, 		DV_L,
 	DV_A,		LCTL_T(DV_O),	LSFT_T(DV_E), 	DV_U, 		DV_I, 		DV_D, 		DV_H, 		LSFT_T(DV_T), 	LCTL_T(DV_N), 		DV_S,
 	DV_SCLN, 	DV_Q, 		DV_J, 		DV_K, 		DV_X, 		DV_B, 		DV_M, 		DV_W, 		DV_V, 		DV_Z,
-			MO(_CODING), 	KC_BSPC, 	MO(_NUMPAD),	KC_ENT,     	KC_TAB,		KC_LGUI,	KC_SPC,		KC_ESC
+			KC_LGUI, 	KC_BSPC, 	MO(_CODING),	KC_ENT,     	KC_TAB,		MO(_NUMPAD),	KC_SPC,		KC_ESC
 ),
 
 
