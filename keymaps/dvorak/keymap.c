@@ -9,9 +9,9 @@ enum layer_names {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_DVORAK] = LAYOUT(
-	DV_QUOT,	DV_COMM, 	DV_DOT, 	DV_P, 		DV_Y, 		DV_F, 		DV_G, 		DV_C, 		DV_R, 		DV_L,
-	DV_A,		LCTL_T(DV_O),	DV_E, 		LSFT_T(DV_U), 	DV_I, 		DV_D, 		LSFT_T(DV_H),	DV_T, 		LCTL_T(DV_N), 	DV_S,
-	DV_SCLN, 	DV_Q, 		DV_J, 		DV_K, 		DV_X, 		DV_B, 		DV_M, 		DV_W, 		DV_V, 		DV_Z,
+	DV_QUOT,	DV_COMM, 	LCTL_T(DV_DOT),	DV_P, 		DV_Y, 		DV_F, 		DV_G, 		DV_C, 		DV_R, 		DV_L,
+	DV_A,		DV_O,		DV_E, 		DV_U, 		DV_I, 		DV_D, 		DV_H,		DV_T, 		DV_N, 		DV_S,
+	LSFT_T(DV_SCLN),DV_Q, 		DV_J, 		DV_K, 		DV_X, 		DV_B, 		DV_M, 		DV_W, 		DV_V, 		LSFT_T(DV_Z),
 			KC_LGUI, 	KC_BSPC, 	MO(_CODING),	KC_ENT,     	KC_TAB,		MO(_NUMPAD),	KC_SPC,		KC_ESC
 ),
 
