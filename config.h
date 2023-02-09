@@ -4,8 +4,8 @@
 #define VENDOR_ID    0xFEED
 #define PRODUCT_ID   0x0000
 #define DEVICE_VER   0x0001
-#define MANUFACTURER Lucas_Engel
-#define PRODUCT      splity_mate
+#define MANUFACTURER "Lucas_Engel"
+#define PRODUCT      "splity_mate"
 
 #define MATRIX_ROWS 8
 #define MATRIX_COLS 5
@@ -19,3 +19,8 @@
 #define UNICODE_SELECTED_MODES UC_LNX
 #define EE_HANDS
 #define COMBO_COUNT 3
+
+#define MK_3_SPEED
+#define MK_MOMENTARY_ACCEL
+#define MK_C_OFFSET_UNMOD 6
+#define MK_C_INTERVAL_UNMOD 8
