@@ -10,7 +10,7 @@ enum layer_names {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[_DVORAK] = LAYOUT(
-	DV_QUOT,	LALT_T(DV_COMM),LCTL_T(DV_DOT),	DV_P, 		DV_Y, 		DV_F, 		DV_G, 		RCTL_T(DV_C), 		RALT_T(DV_R), 		DV_L,
+	DV_QUOT,	LALT_T(DV_COMM),LCTL_T(DV_DOT),	DV_P, 		DV_Y, 		DV_F, 		DV_G, 		RCTL_T(DV_C), 	RALT_T(DV_R), 	DV_L,
 	DV_A,		DV_O,		DV_E, 		DV_U, 		DV_I, 		DV_D, 		DV_H,		DV_T, 		DV_N, 		DV_S,
 	LSFT_T(DV_SCLN),DV_Q, 		DV_J, 		DV_K, 		DV_X, 		DV_B, 		DV_M, 		DV_W, 		DV_V, 		LSFT_T(DV_Z),
 			KC_LGUI, 	KC_BSPC, 	MO(_CODING),	KC_ENT,     	KC_TAB,		MO(_NUMPAD),	KC_SPC,		KC_ESC
@@ -19,8 +19,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 	[_NUMPAD] = LAYOUT(
 	KC_PAST, 	KC_7, 		KC_8, 		KC_9, 		KC_PPLS, 	KC_MPLY,	KC_MPRV, 	KC_UP, 		KC_MNXT,	KC_TRNS,
-	KC_0, 	KC_4, 		KC_5, 		KC_6, 		KC_PMNS, 	KC_DEL, 	KC_LEFT,	KC_DOWN,	KC_RGHT,	KC_LCTL,
-	KC_LSFT, 		KC_1, 		KC_2, 		KC_3, 		KC_PSLS, 	KC_AMPR, 	KC_EXLM, 	KC_CIRC, 	KC_PERC, 	MO(_MOUSE),
+	KC_0, 		KC_4, 		KC_5, 		KC_6, 		KC_PMNS, 	KC_DEL, 	KC_LEFT,	KC_DOWN,	KC_RGHT,	KC_LCTL,
+	KC_LSFT, 	KC_1, 		KC_2, 		KC_3, 		KC_PSLS, 	KC_AMPR, 	KC_EXLM, 	KC_CIRC, 	KC_PERC, 	MO(_MOUSE),
 			KC_TRNS,	KC_TRNS,	KC_TRNS,	KC_TRNS, 	KC_TRNS, 	KC_TRNS, 	KC_TRNS, 	KC_TRNS
 ),
 
